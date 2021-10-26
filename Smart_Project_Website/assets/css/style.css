@@ -423,21 +423,20 @@ section {
   text-align: justify;
 }
 
-.home .abstract h1{
+.home .section-title h1{
   font-weight: bolder;
 }
 
-.home .abstract .topic{
+.home .section-title .topic{
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.home .abstract .topic p{
+.home .section-title .topic p{
   text-align: center;
   font-size: 1rem;
 }
 
-.home .abstract .pms{
+.home .section-title .pms{
   height: 100%;
   display: flex;
   align-items: center;
@@ -445,28 +444,28 @@ section {
   margin:auto;
 }
 
-.home .abstract .pms img{
+.home .section-title .pms img{
   width: 100%;
 }
 
 @media (max-width: 1024px) {
-  .home .abstract .pms img{
+  .home .section-title .pms img{
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .home .abstract .pms img{
+  .home .section-title .pms img{
     margin-bottom: 20px;
     width: 80%;
   }
-  .home .abstract{
+  .home .section-title{
     margin-left: 1%;
     margin-right: 1%;
   }
-  .home .abstract p{
+  .home .section-title p{
     font-size: 0.8rem;
   }
-  .home .abstract .topic .p{
+  .home .section-title .topic .p{
     font-size: 0.1rem;
   }
 }
