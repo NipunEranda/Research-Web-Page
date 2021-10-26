@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
 
@@ -418,28 +418,31 @@ section {
 /*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
-.home .abstract p{
+.home .add-margin {
+  margin-top: 50px;
+}
+
+.home .section-title p{
   font-size: 1.2rem;
   text-align: justify;
 }
 
-.home .abstract h1{
+.home .section-title h1{
   font-weight: bolder;
   font-family: "Montserrat", sans-serif;
 }
 
-.home .abstract .topic{
+.home .section-title .topic{
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.home .abstract .topic p{
+.home .section-title .topic p{
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
 }
 
-.home .abstract .pms{
+.home .section-title .pms{
   height: 100%;
   display: flex;
   align-items: center;
@@ -447,28 +450,28 @@ section {
   margin:auto;
 }
 
-.home .abstract .pms img{
+.home .section-title .pms img{
   width: 100%;
 }
 
 @media (max-width: 1024px) {
-  .home .abstract .pms img{
+  .home .section-title .pms img{
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .home .abstract .pms img{
+  .home .section-title .pms img{
     margin-bottom: 20px;
     width: 80%;
   }
-  .home .abstract{
+  .home .section-title{
     margin-left: 1%;
     margin-right: 1%;
   }
-  .home .abstract p{
+  .home .section-title p{
     font-size: 0.8rem;
   }
-  .home .abstract .topic .p{
+  .home .section-title .topic .p{
     font-size: 0.1rem;
   }
 }
@@ -833,7 +836,7 @@ section {
 --------------------------------------------------------------*/
 .team {
   background: #fff;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 .team .member {
   margin-bottom: 20px;
@@ -1032,11 +1035,6 @@ section {
   }
 }
 
-/*@media (max-width: 1024px) {
-  .home .abstract .pms img{
-    width: 100%;
-  }
-}*/
 @media (max-width: 768px) {
   .contact .info {
     flex-direction: column!important;
