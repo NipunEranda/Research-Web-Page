@@ -9,619 +9,66 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">-->
-
-  <!-- Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Knight - v4.6.0
-  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('header').load('components/header.html');
+      $('#hero').load('components/hero.html');
+      $('#home').load('components/home.html');
+      $('#domain').load('components/domain.html');
+      $('#projectMilestones').load('components/milestones.html');
+      $('#about').load('components/about.html');
+      $('#team').load('components/team.html');
+      $('#contact').load('components/contact.html');
+      $('#footer').load('components/footer.html');
+    });
+  </script>
+
 </head>
 
 <body>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="assets/img/logo.png" alt=""
-          style="width: 80%;"></a>
-      <h1 data-aos="zoom-in">WELCOME TO SMART PROJECT</h1>
-      <h2 data-aos="fade-up">Advanced Project Management System For Software Development</h2>
-      <a data-aos="fade-up" data-aos-delay="200" href="#home" class="btn-get-started scrollto">Get Started</a>
-    </div>
-  </section><!-- End Hero -->
+  <section id="hero"></section>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="/#home">Home</a></li>
-          <li><a class="nav-link scrollto" href="/#domain">Domain</a></li>
-          <li><a class="nav-link scrollto " href="/#projectMilestones">Milestones</a></li>
-
-          <li class="dropdown"><a href="/#home"><span>Downloads</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <!--Documents-->
-              <li class="dropdown"><a href="/#home"><span>Documents</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="./assets/documents/documents/charterDocument/ProjectCharter_2020-234.docx">Project
-                      Charter</a></li>
-                  <li class="dropdown"><a href="/#home"><span>Proposal Document</span> <i
-                        class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="./assets/documents/documents/proposalDocument/IT18009446.docx">Proposal Document
-                          1</a>
-                      </li>
-                      <li><a href="./assets/documents/documents/proposalDocument/IT18003642.docx">Proposal Document
-                          2</a>
-                      </li>
-                      <li><a href="./assets/documents/documents/proposalDocument/IT18129236.docx">Proposal Document
-                          3</a>
-                      </li>
-                      <li><a href="./assets/documents/documents/proposalDocument/IT18140330.docx">Proposal Document
-                          4</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="/#">Research Log Book</a></li>
-                  <li class="dropdown"><a href="/#home"><span>Status Document</span> <i
-                        class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="./assets/documents/documents/StatusDocument/2021-234_Status_Document_1.docx">Status
-                          Document 1</a></li>
-                      <li><a href="#">Status Document 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="/#home"><span>Final Document</span> <i
-                        class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="./assets/documents/documents/FinalDocument/IT18009446.docx">Final Document 1</a></li>
-                      <li><a href="./assets/documents/documents/FinalDocument/IT18003642.docx">Final Document 2</a></li>
-                      <li><a href="./assets/documents/documents/FinalDocument/IT18129236.docx">Final Document 3</a></li>
-                      <li><a href="./assets/documents/documents/FinalDocument/IT18140330.docx">Final Document 4</a></li>
-                      <li><a href="./assets/documents/documents/FinalDocument/2021-234-Group.docx">Group Final
-                          Document</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-
-              <!--Presentations-->
-              <li class="dropdown"><a href="/#home"><span>Presentations</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="./assets/documents/presentations/proposal/2021-234-Proposal.pptx">Proposal
-                      Presentation</a>
-                  </li>
-                  <li><a href="./assets/documents/presentations/pp1/2021-234-PP1.potm">Progress Presentation 1</a></li>
-                  <li><a href="./assets/documents/presentations/pp2/2021-234-PP2.pptx">Progress Presentation 2</a></li>
-                  <li><a href="./assets/documents/presentations/pp2/2021-234-PP2.pptx">Final Presentation</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="/#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="/#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="/#contact">Contact Us</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+  <header id="header" class="d-flex align-items-center"></header>
 
   <main id="main">
 
-    <!-- ======= Home Section ======= -->
+    <section id="home" class="home"></section>
 
-    <section id="home" class="home">
+    <section id="domain" class="domain"></section>
+    
+    <section id="projectMilestones" class="projectMilestones"></section>
 
-      <div class="container">
-        <div class="col-lg-12 abstract">
-          <div class="topic">
-            <b>
-              <h1>SMART PROJECT</h1>
-              <p>An advanced project management system for software development</p>
-            </b>
-            <img src="/assets/img/under-heading.png" alt="">
-          </div>
-          <div class="row">
-            <div class="col-lg-6 pms">
-              <img src="/assets/img/pms.png" alt="" />
-            </div>
-            <div class="col-lg-6">
-              <p>
-                Project Management System important in large-scale projects. There are existing project management tools
-                such as Redmine, Microsoft Project, Jira. Most of the existing project management systems only
-                configured
-                for general purposes such as Project Management, Task management, Time line management. None of them
-                capable
-                of generating project groups, track student progress or track client meetings. These functions are very
-                helpful in tracking project progress as well as individual member progress. Hence, the purpose of this
-                research is to introduce set of new features to a project management system with accurate and effective
-                project management capabilities. This system is capable of generating project groups using student’s
-                skills,
-                Grade point average (GPA). Smart project tracking system where it uses project repositories and system
-                generated timeline for the project. Using the project tracking system, Supervisors can manage groups
-                remotely. Automatic peer review also added to identify each student’s contribution to the project and
-                finally a client portal where clients can request solutions for their requirements and students can use
-                them
-                as their module project. Client meetings will be tracked using voice-to-text algorithm and also
-                emotional
-                recognition where it will identify client’s satisfaction. All These system modules will be used to
-                calculate
-                group performance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section id="about" class="about"></section>
 
-    </section>
+    <section id="team" class="team"></section>
 
-    <!-- ======= End Home ======= -->
+    <section id="contact" class="contact section-bg"></section>
 
-    <!-- ======= Project Scope Section ======= -->
-    <section id="domain" class="domain">
-      <div class="container">
+  </main>
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Domain</h2>
-          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga eum quidem</p>
-        </div>
+  <footer id="footer"></footer>
 
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
-              <i class="bx bx-receipt"></i>
-              <h4>Est labore ad</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-cube-alt"></i>
-              <h4>Harum esse qui</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-images"></i>
-              <h4>Aut occaecati</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-shield"></i>
-              <h4>Beatae veritatis</h4>
-              <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-            </div>
-          </div>
-          <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("assets/img/services.jpg");'
-            data-aos="fade-left" data-aos-delay="100"></div>
-        </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Project Milestones Section ======= -->
-    <section id="projectMilestones" class="projectMilestones">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Project Milestones</h2>
-          <p>The following milestones are used to achieve the goal of developing the Smart Project system. The project
-            will be
-            evaluated out of 100 marks to be achieved at the end of the year. And out of the 100 marks different
-            percentages are allocated for each milestone achievement. Team has met the deadlines and produced the
-            relevant documentations and the required presentations of the Smart Project System.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100" style="margin-bottom: 1%;">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="projectMilestones-flters">
-              <li class="filter-active filter-pp" onclick="viewDiv('filter-pp-div');">Project Proposal</li>
-              <li class="filter-pp1" onclick="viewDiv('filter-pp1-div');">Presentation 1</li>
-              <li class="filter-pp2" onclick="viewDiv('filter-pp2-div');">Presentation 2</li>
-              <li class="filter-demo" onclick="viewDiv('filter-demo-div');">Demo</li>
-              <li class="filter-fa" onclick="viewDiv('filter-fa-div');">Final Assessment</li>
-              <li class="filter-v" onclick="viewDiv('filter-v-div');">Viva</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row projectMilestones-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="col col-lg-8 filter-pp filter-dev" id="filter-pp-div">
-            <h4>Project Proposal</h4>
-            <p>Project Proposal document is the initial document that demarcate the initial requirements of the project
-              activities. These requirements could change over the time. Follow-up of a good project management plan is
-              quite necessary to support the aggressive changes of the requirements. The use of methodologies and PMP
-              are described under the proposal document as well.
-            </p>
-          </div>
-          <div class="col col-lg-8 filter-pp1 filter-dev hidden" id="filter-pp1-div">
-            <h4>Presentation 1</h4>
-          </div>
-          <div class="col col-lg-8 filter-pp2 filter-dev hidden" id="filter-pp2-div">
-            <h4>Presentation 2</h4>
-          </div>
-          <div class="col col-lg-8 filter-demo filter-dev hidden" id="filter-demo-div">
-            <h4>Demo</h4>
-          </div>
-          <div class="col col-lg-8 filter-fa filter-dev hidden" id="filter-fa-div">
-            <h4>Final Assessment</h4>
-          </div>
-          <div class="col col-lg-8 filter-v filter-dev hidden" id="filter-v-div">
-            <h4>Viva</h4>
-            <p>
-              The oral exam (also oral test or viva voce) is a practice in many schools and disciplines, where an
-              examiner poses questions to the student in spoken form. The student has to answer the question in such a
-              way as to demonstrate sufficient knowledge of the subject in order to pass the exam.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- End Project Milestones Section -->
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>About Us</h2>
-          <p>Magnam dolores commodi suscipit eius consequatur</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="image">
-              <img src="assets/img/about.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-              <h3>Voluptatem dignissimos provident quasi corporis</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
-                  pariatur.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                in
-                culpa qui officia deserunt mollit anim id est laborum
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-          <p>Our Research Team</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="zoom-in">
-              <div class="member-img">
-                <img src="assets/img/team/member1.JPG" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-phone"></i></a>
-                  <a href=""><i class="bi bi-github"></i></a>
-                  <a href=""><i class="bi bi-google"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Nipun Amarasekara</h4>
-                <span>Project Leader</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/team/member2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-github"></i></a>
-                  <a href=""><i class="bi bi-google"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Thisura Navanjana</h4>
-                <span>Project Member</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/member3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-github"></i></a>
-                  <a href=""><i class="bi bi-google"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Gamage Osanda</h4>
-                <span>Project Member</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/member4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-github"></i></a>
-                  <a href=""><i class="bi bi-google"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Prabhashi Isurindi</h4>
-                <span>Project Member</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/supervisor.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-google"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Uthpala Samarakoon</h4>
-                <span>Project Supervisor</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/co-supervisor.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-google"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Archchana Kugathasan</h4>
-                <span>Project Co-Supervisor</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="zoom-in">
-        <div class="title">
-          <!--<i class="bx bxs-quote-right"></i>-->
-          <h1>Contribution To The Project</h1>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <img src="assets/img/team/member1.JPG" class="testimonial-img" alt="">
-                <h3>Nipun Amarasekara</h3>
-                <h4>Project Leader &amp; Backend Developer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <img src="assets/img/team/member2.jpg" class="testimonial-img" alt="">
-                <h3>Thisura Navanjana</h3>
-                <h4>Backend Developer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <img src="assets/img/team/member3.jpg" class="testimonial-img" alt="">
-                <h3>Gamage Osanda</h3>
-                <h4>Frontend Developer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <img src="assets/img/team/member4.jpg" class="testimonial-img" alt="">
-                <h3>Prabhashi Isurindi</h3>
-                <h4>Frontend Developer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <img src="assets/img/team/supervisor.jpg" class="testimonial-img" alt="">
-                <h3>Uthpala Samarakoon</h3>
-                <h4>Project Supervisor</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <img src="assets/img/team/co-supervisor.png" class="testimonial-img" alt="">
-                <h3>Archchana Kugathasan</h3>
-                <h4>Project Co-Supervisor</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact Us</h2>
-          <p>More information regarding the research outcome, please contact us.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-12">
-            <div class="info d-flex justify-content-center" data-aos="fade-right">
-
-              <div class="col d-flex col-lg-4">
-                <div class="email">
-                  <i class="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>spms@gmail.com</p>
-                </div>
-              </div>
-
-              <div class="col d-flex  col-lg-4">
-                <div class="phone">
-                  <i class="bi bi-phone"></i>
-                  <h4>Call:</h4>
-                  <p>+94711294033</p>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <a href="#header" class="scrollto footer-logo"><img src="assets/img/logo.png" alt=""></a>
-            <h3>Smart Project Management System</h3>
-          </div>
-        </div>
-
-        <div class="social-links">
-          <a href="#" class="phone"><i class="bi bi-phone"></i></a>
-          <a href="#" class="github"><i class="bx bxl-github"></i></a>
-          <a href="#" class="google"><i class="bx bxl-google"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Smart Project</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="#">SLIIT</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
