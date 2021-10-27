@@ -536,6 +536,11 @@ section {
   margin-bottom: 40px;
 }
 
+.domain .innerContainer p{
+  text-align: justify;
+}
+
+
 .domain #methodology-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -578,6 +583,14 @@ section {
 .methodology-container .filter-dev p{
   text-align: justify;
   font-size: 1rem;
+}
+
+.methodology-container #gg-methodology-img{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
 }
 
 @media (max-width: 1024px) {
