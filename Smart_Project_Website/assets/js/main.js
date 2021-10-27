@@ -157,25 +157,6 @@
   });
 
   /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let projectMilestonesContainer = select('.projectMilestones-container');
-
-    let projectMilestonesFilters = select('#projectMilestones-flters li', true);
-
-    on('click', '#projectMilestones-flters li', function (e) {
-      e.preventDefault();
-      projectMilestonesFilters.forEach(function (el) {
-        el.classList.remove('filter-active');
-      });
-      this.classList.add('filter-active');
-
-    }, true);
-
-  });
-  
-  /**
    * Initiate projectMilestones lightbox 
    */
   const projectMilestonesLightbox = GLightbox({
@@ -231,15 +212,30 @@
 
 })()
 
- /*View the Div*/
+/*View the Div*/
 
- function viewDiv(id, currentButton) {
-  var divList = ['filter-pp-div', 'filter-pp1-div', 'filter-pp2-div', 'filter-demo-div', 'filter-fa-div', 'filter-v-div'];
+function viewMilestoneDivs(id, currentButton) {
+  var divList = ['filter-pp-', 'filter-pp1-', 'filter-pp2-', 'filter-demo-', 'filter-fa-', 'filter-v-'];
   divList.forEach(element => {
-    if(id == element){
-      document.getElementById(element).classList.remove('hidden');
-    }else{
-      document.getElementById(element).classList.add('hidden');
+    if (id == element + 'div') {
+      document.getElementById(element + 'nav').classList.add('filter-active');
+      document.getElementById(element + 'div').classList.remove('hidden');
+    } else {
+      document.getElementById(element + 'nav').classList.remove('filter-active');
+      document.getElementById(element + 'div').classList.add('hidden');
+    }
+  });
+}
+
+function viewDomainDivs(id, currentButton) {
+  var divList = ['filter-gg-', 'filter-gc-', 'filter-mp-', 'filter-pr-'];
+  divList.forEach(element => {
+    if (id == element + 'div') {
+      document.getElementById(element + 'nav').classList.add('filter-active');
+      document.getElementById(element + 'div').classList.remove('hidden');
+    } else {
+      document.getElementById(element + 'nav').classList.remove('filter-active');
+      document.getElementById(element + 'div').classList.add('hidden');
     }
   });
 }
