@@ -649,6 +649,7 @@ section {
   font-weight: bolder;
   text-align: center;
   font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .projectMilestones-container .filter-dev p{

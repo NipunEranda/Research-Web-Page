@@ -214,15 +214,36 @@
 
 /*View the Div*/
 
-function viewMilestoneDivs(id, currentButton) {
-  var divList = ['filter-pp-', 'filter-pp1-', 'filter-pp2-', 'filter-demo-', 'filter-fa-', 'filter-v-'];
+function viewMilestoneDivs(id) {
+  var divList = ['filter-pp-', 'filter-pp1-', 'filter-pp2-', 'filter-fa-'];
   divList.forEach(element => {
     if (id == element + 'div') {
-      document.getElementById(element + 'nav').classList.add('filter-active');
-      document.getElementById(element + 'div').classList.remove('hidden');
+      if ((document.getElementById(element + 'nav').classList.length) > 0) {
+        document.getElementById(element + 'nav').classList.add('filter-active');
+        document.getElementById(element + 'div').classList.remove('hidden');
+      }
     } else {
-      document.getElementById(element + 'nav').classList.remove('filter-active');
-      document.getElementById(element + 'div').classList.add('hidden');
+      if ((document.getElementById(element + 'nav').classList.length) > 0) {
+        document.getElementById(element + 'nav').classList.remove('filter-active');
+        document.getElementById(element + 'div').classList.add('hidden');
+      }
+    }
+  });
+}
+
+function viewMilestoneInnerDivs(id) {
+  var divList = ['filter-demo-', 'filter-v-'];
+  divList.forEach(element => {
+    if (id == element + 'div') {
+      if ((document.getElementById(element + 'nav').classList.length) > 0) {
+        document.getElementById(element + 'nav').classList.add('filter-active');
+        document.getElementById(element + 'div').classList.remove('hidden');
+      }
+    } else {
+      if ((document.getElementById(element + 'nav').classList.length) > 0) {
+        document.getElementById(element + 'nav').classList.remove('filter-active');
+        document.getElementById(element + 'div').classList.add('hidden');
+      }
     }
   });
 }
