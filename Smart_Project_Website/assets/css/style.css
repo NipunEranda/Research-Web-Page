@@ -1323,4 +1323,8 @@ Mobile Configurations
         padding-right: 30px;
         text-align: justify;
     }
+    .testimonials .testimonial-item p {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
